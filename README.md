@@ -46,7 +46,9 @@
    ![Wled Controller Ajazz](static/win1.jpg)
    
 2. Откройте StreamDock и настройте кнопки
+
 </details>
+
 
 ## Обратная связь
 
@@ -56,4 +58,4 @@
 
 ## Напоминание
 
-> Пожалуйста, при создании плагинов под другие устройства и форков указывайте оригинальный репозиторий: [whxtelxs/Yandex-Music-Ajazz-Plugin](https://github.com/whxtelxs/Yandex-Music-Ajazz-Plugin).
+> Пожалуйста, при создании плагинов под другие устройства и форков указывайте оригинальный репозиторий: [MrFlit/Wled-Controller-Ajazz-Plugin](https://github.com/MrFlit/Wled-Controller-Ajazz-Plugin).
