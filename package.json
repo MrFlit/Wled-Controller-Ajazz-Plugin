@@ -1,0 +1,8 @@
+{
+  "name": "wled-control-ajazz",
+  "version": "1.0.1",
+  "private": true,
+  "description": "WLED control plugin for AJAZZ StreamDock (self-contained, no npm dependencies)",
+  "main": "plugin/main.js",
+  "dependencies": {}
+}

@@ -1,0 +1,76 @@
+{
+  "Actions": [
+    {
+      "Icon": "imgs/wled-off.jpg",
+      "Name": "On/Off",
+      "States": [
+        {
+          "Image": "imgs/wled-off.jpg",
+          "Name": "Выключено"
+        },
+        {
+          "Image": "imgs/wled-on.jpg",
+          "Name": "Включено"
+        },
+        {
+          "Image": "imgs/wled-error.jpg",
+          "Name": "Нет связи"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": true,
+      "SupportedInMultiActions": true,
+      "Tooltip": "Включить или выключить WLED",
+      "UUID": "ru.mrflit.streamdock.wled.power",
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Icon": "imgs/wled-on.jpg",
+      "Name": "Brightness",
+      "States": [
+        {
+          "Image": "imgs/wled-on.jpg",
+          "Name": "Яркость"
+        }
+      ],
+      "Controllers": [
+        "Knob"
+      ],
+      "Encoder": {
+        "layout": "$A1",
+        "TriggerDescription": {
+          "Rotate": "Изменение яркости WLED",
+          "Push": "Без действия"
+        }
+      },
+      "UserTitleEnabled": true,
+      "SupportedInMultiActions": false,
+      "Tooltip": "Поворотом энкодера изменяйте яркость WLED (0–250)",
+      "UUID": "ru.mrflit.streamdock.wled.brightness",
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    }
+  ],
+  "Author": "MrFlit",
+  "Name": "WLED Control",
+  "Description": "Управление WLED ESP32 с AJAZZ StreamDock",
+  "Icon": "imgs/plugin.jpg",
+  "URL": "",
+  "Version": "1.0.1",
+  "SDKVersion": 1,
+  "CodePath": "plugin/main.js",
+  "CodePathWin": "plugin/main.js",
+  "Nodejs": {
+    "Version": "20"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Category": "Smart Home",
+  "CategoryIcon": "imgs/category.jpg",
+  "UUID": "ru.mrflit.streamdock.wled"
+}
