@@ -46,7 +46,7 @@
    ![Wled Controller Ajazz](static/win1.jpg)
    
 2. Откройте StreamDock и настройте кнопки
-
+</details>
 
 ## Обратная связь
 
