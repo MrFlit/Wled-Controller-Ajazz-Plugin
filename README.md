@@ -1,5 +1,5 @@
 # Wled Controller Ajazz Plugin
-![Wled Controller Ajazz](static/AjazzWled.png)
+![Wled Controller Ajazz](static/AjazzWled.jpg)
 
 Плагин для управления приложением Wled с помощью Ajazz или MiraBox и других устройств StreamDock.
 
