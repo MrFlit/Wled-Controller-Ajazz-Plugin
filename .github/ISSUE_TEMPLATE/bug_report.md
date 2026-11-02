@@ -1,38 +1,88 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+name: Сообщить о баге
+description: Сообщите об ошибке в работе плагина Yandex Music для Ajazz/StreamDock
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: plugin_version
+    attributes:
+      label: Версия плагина
+      description: Какую версию плагина вы используете?
+      options:
+        - v1.0.1
+        - v1.0.0
+        - Другая/не знаю
+    validations:
+      required: true
 
----
+  - type: dropdown
+    id: bug_type
+    attributes:
+      label: Тип проблемы
+      options:
+        - Визуальный
+        - Запуск/подключение
+        - Производительность
+        - Синхронизация состояния
+        - Управление wled
+        - Настройки
+        - Обновления
+        - Другое
+    validations:
+      required: true
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+  - type: input
+    id: device
+    attributes:
+      label: Устройство
+      description: Модель устройства Ajazz / StreamDock
+      placeholder: "Например: Ajazz AKP05E"
+    validations:
+      required: true
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+  - type: input
+    id: host_version
+    attributes:
+      label: Версия ПО
+      description: Версия ПО из настроек оборудования StreamDock (Шестеренка - Версия ПО)
+      placeholder: "Например: 3.10.200.0420"
+    validations:
+      required: true
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги для воспроизведения
+      description: Как воспроизвести проблему?
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемое поведение
+      description: Что должно было произойти?
+    validations:
+      required: true
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактическое поведение
+      description: Что произошло на самом деле?
+    validations:
+      required: true
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Дополнительная информация
+      description: Логи, скриншоты, контекст (необязательно)
+      render: markdown
+    validations:
+      required: false
